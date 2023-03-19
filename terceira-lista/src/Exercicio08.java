@@ -16,7 +16,7 @@ public class Exercicio08 {
         if (cnh == null || cnh.length() != 11) {
             return false;
         }
-        // Verificar o primeiro dígito verificador
+        // Primeiro dígito verificador
         int sum = 0;
         for (int i = 0; i < 9; i++) {
             int digit = cnh.charAt(i) - '0';
@@ -29,7 +29,7 @@ public class Exercicio08 {
         if (cnh.charAt(9) - '0' != firstDigit) {
             return false;
         }
-        // Verificar o segundo dígito verificador
+        // Segundo dígito verificador
         sum = 0;
         int multiplier = 9;
         for (int i = 0; i < 10; i++) {
